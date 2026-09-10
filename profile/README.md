@@ -6,7 +6,7 @@
 
 ### The carbon API that hands back the source with the number.
 
-17,000+ sourced greenhouse-gas emission factors and audit-traced calculations —
+16,000+ sourced greenhouse-gas emission factors and audit-traced calculations —
 every value returned with the publisher, the exact cell it was read from, and the data
 version it was read at. So your users get a figure an auditor can follow, not a guess.
 
@@ -93,7 +93,7 @@ factor you expected isn't there — usually the real question behind "do you hav
 Ask a language model for an emission factor with no tools and it will usually give you
 one. [**`greencalculus-benchmark`**](https://github.com/greencalculus/greencalculus-benchmark)
 measures how often that number is right — and how often the model names the wrong source
-for it. 473 questions, 45 sections, 75 publishers, generated deterministically against
+for it. 467 questions, 45 sections, 75 publishers, generated deterministically against
 sourced ground truth.
 
 **Five models, 467 questions, no tools:**
@@ -126,12 +126,12 @@ six bugs](https://github.com/greencalculus/greencalculus-benchmark/blob/main/FIN
 ## What's in the corpus: open data
 
 [**`greencalculus-open-data`**](https://github.com/greencalculus/greencalculus-open-data)
-publishes the coverage map — **17,074 factors from 137 publishers**, each row with its key,
+publishes the coverage map — **16,673 factors from 137 publishers**, each row with its key,
 section, unit, gas, GHG Protocol scope, publisher, licence, and whether it may be
 republished. Generated from the live API, nothing hand-maintained.
 
-- **15,748 rows / 75 sources** carry a licence that permits republication — OGL, CC BY 4.0, Etalab, US public domain, Eurostat reuse.
-- **1,326 rows / 62 sources** do not, and the reason is the publisher's own: paid standards, NonCommercial or NoDerivatives terms, viral share-alike, or no grant found.
+- **15,347 factors / 75 sources** carry a licence that permits republication — OGL, CC BY 4.0, Etalab, US public domain, Eurostat reuse.
+- **1,326 factors / 62 sources** do not, and the reason is the publisher's own: paid standards, NonCommercial or NoDerivatives terms, viral share-alike, or no grant found.
 
 **No factor values** — it's our metadata about what the corpus covers, so it's publishable
 regardless of upstream terms and you can use it freely to answer "is there a factor for X?"
@@ -175,7 +175,7 @@ CSRD/ESRS E1 · SBTi · PCAF.
 | 🔌 **[greencalculus-sdk](https://github.com/greencalculus/greencalculus-sdk)** | Official Python & JS/TS clients, plus Sheets and Postman |
 | 🤖 **[greencalculus-mcp](https://github.com/greencalculus/greencalculus-mcp)** | MCP server — 12 tools, remote or stdio |
 | 📊 **[greencalculus-benchmark](https://github.com/greencalculus/greencalculus-benchmark)** | How wrong LLMs are about emission factors, and how much tools fix it |
-| 🗂 **[greencalculus-open-data](https://github.com/greencalculus/greencalculus-open-data)** | 17,074-row coverage map with per-publisher licensing |
+| 🗂 **[greencalculus-open-data](https://github.com/greencalculus/greencalculus-open-data)** | 16,673-factor coverage map with per-publisher licensing |
 | 🌐 **[greencalculus-calculator-demo](https://github.com/greencalculus/greencalculus-calculator-demo)** | Zero-dependency demos — Scope 1, SBTi, FLAG, PCAF |
 | 📐 **[greencalculus-methodology](https://github.com/greencalculus/greencalculus-methodology)** | Formal methodology and GHG Protocol alignment documentation |
 | 📖 **[greencalculus-standards](https://github.com/greencalculus/greencalculus-standards)** | Open mapping to the standards we implement |
