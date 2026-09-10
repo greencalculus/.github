@@ -1,0 +1,38 @@
+name: Bug report
+description: Something behaves differently from how it is documented.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For a factor whose *value* looks wrong, use **Report a wrong value** instead — that's a
+        data question, not a code one, and it goes to different people.
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Which package, server or endpoint, and its version.
+      placeholder: e.g. greencalculus 0.2.0 (Python), or mcp.greencalculus.com
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: What you ran
+      description: The smallest snippet that shows it. Please don't include an API key — the corpus reads without one.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: Language runtime and OS, if it might matter.
+      placeholder: e.g. Python 3.11, macOS 15

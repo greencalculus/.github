@@ -1,0 +1,40 @@
+name: Request an emission factor
+description: Ask for a factor that is not in the corpus yet.
+title: "[factor] "
+labels: ["factor request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Missing factors are the most useful thing you can tell us — the corpus grows from these.
+
+        First, worth 30 seconds: search the corpus (keyless, no signup) or
+        [browse it](https://greencalculus.com/factors/?ref=github-issue). Names differ from what
+        you might expect — "diesel" is filed by fuel and litre, not by vehicle.
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you need a factor for?
+      description: The real activity, in your own words. "Refrigerant leakage from R-410A in a UK data centre" beats "refrigerants".
+      placeholder: e.g. HVO renewable diesel, well-to-tank, Netherlands, per litre
+    validations:
+      required: true
+  - type: input
+    id: geography
+    attributes:
+      label: Geography
+      placeholder: e.g. Australia (AUS), or "global average is fine"
+  - type: input
+    id: publisher
+    attributes:
+      label: Is there a published source you would want us to use?
+      description: A publisher, document or table. If you know it's behind a paywall or a restrictive licence, say so — that changes what we can serve.
+  - type: dropdown
+    id: blocking
+    attributes:
+      label: Is this blocking you?
+      options:
+        - "Yes — I can't complete a report without it"
+        - "No — it would be useful"
+    validations:
+      required: true
