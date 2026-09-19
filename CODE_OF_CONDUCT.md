@@ -40,7 +40,7 @@ Examples of unacceptable behaviour:
 
 ## Enforcement
 
-Report unacceptable behaviour to **jeremiah@greencalculus.com**. All complaints
+Report unacceptable behaviour to **security@greencalculus.com**. All complaints
 will be reviewed and investigated promptly and fairly, and the reporter's
 privacy and security will be respected.
 
